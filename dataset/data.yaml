@@ -1,0 +1,11 @@
+# MetalScan 四分类缺陷检测数据集（8:2 划分）
+path: D:\Apps\yolo\划痕检测\dataset
+train: images/train
+val: images/val
+
+nc: 4
+names:
+  0: scratch
+  1: dent
+  2: stain
+  3: normal_part

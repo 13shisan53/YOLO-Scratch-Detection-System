@@ -1,0 +1,14 @@
+# MetalScan 缺陷检测数据集（四分类）
+# 来源: NEU-DET (Song et al., 2013) + GC10-DET (Lv et al., 2020)
+# 目录结构: images/{scratch,dent,stain,normal_part} + labels/{...}（YOLO 格式）
+
+path: D:\Apps\yolo\划痕检测
+train: images   # 未划分 train/val 时可先用全部数据；建议后续按 8:2 重新划分
+val: images
+
+nc: 4
+names:
+  0: scratch        # 划痕      <- NEU-DET scratches (id5)
+  1: dent           # 缺角/凹陷  <- GC10-DET crescent_gap(id0) + punching(id2)
+  2: stain          # 脏污/锈斑  <- GC10-DET oil_spot(id1) + water_spot(id5)
+  3: normal_part    # 正常件     <- 缺陷框以外裁剪的无缺陷表面区域（空标签）

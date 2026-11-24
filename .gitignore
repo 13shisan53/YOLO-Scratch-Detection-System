@@ -1,0 +1,17 @@
+# 运行产物
+results/
+records.csv
+*.log
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# 大文件（数据集请按 docs/DATA_PROVENANCE.md 流程重建）
+_download_tmp/
+raw/
+runs/
+val_predictions/
+images/
+labels/
+dataset/images/
+dataset/labels/

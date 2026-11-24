@@ -1,0 +1,14 @@
+# MetalScan 基于YOLO模型的划痕检测系统
+# 实测通过版本 (Python 3.12+)
+
+ultralytics>=8.4
+torch>=2.0
+torchvision
+opencv-python>=4.8
+numpy>=1.24
+flask>=3.0
+onnx>=1.15
+onnxruntime>=1.16
+onnxslim
+pillow>=10.0
+matplotlib
